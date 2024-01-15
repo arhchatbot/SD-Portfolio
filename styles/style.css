@@ -157,3 +157,61 @@ body {
   color: #1BFF07;
   background: #000;
 }
+
+.competencies {
+  margin: 0 auto;
+  max-width: 1400px;
+  background: #000;
+}
+
+.competencies__title {
+  margin-bottom: 104px;
+  width: 1048px;
+  font-size: 55px;
+  line-height: normal;
+  letter-spacing: -1.65px;
+  color: #FFF;
+}
+
+.competencie__text {
+  margin-bottom: 60px;
+}
+
+.competencie__title {
+  margin-bottom: 15px;
+  width: 1048px;
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  color: #1BFF07;
+}
+
+.competencie__description {
+  width: 778px;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+  color: #FFF;
+}
+
+
+.competencie__box {
+  margin-bottom: 16px;
+  width: 45px;
+  height: 44px;
+  background-image: url('../resources/first_icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second_icon {
+  background-image: url('../resources/second_icon.png');
+}
+
+.third_icon {
+  background-image: url('../resources/third_icon.png');
+}
+
+.fourth_icon {
+  background-image: url('../resources/fourth_icon.png');
+}
