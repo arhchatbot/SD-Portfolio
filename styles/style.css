@@ -82,10 +82,8 @@ body {
 }
 
 .projects {
-  margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 150px;
-  max-width: 1400px;
   background: #000;
 }
 
@@ -100,6 +98,10 @@ body {
 
 .project {
   position: relative;
+}
+
+.projects__list {
+  margin-bottom: 80px;
 }
 
 .project__title {
@@ -124,9 +126,6 @@ body {
   color: #FFF;
 }
 
-.projects__box {
-  margin-bottom: 80px;
-}
 
 .projects__link {
   display: block;
@@ -159,8 +158,6 @@ body {
 }
 
 .competencies {
-  margin: 0 auto;
-  max-width: 1400px;
   background: #000;
 }
 
