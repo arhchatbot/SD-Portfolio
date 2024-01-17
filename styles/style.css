@@ -2,6 +2,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
+  background: #000;
 }
 
 .container {
@@ -84,7 +85,6 @@ body {
 .projects {
   padding-top: 150px;
   padding-bottom: 150px;
-  background: #000;
 }
 
 .projects__title {
@@ -157,12 +157,8 @@ body {
   background: #000;
 }
 
-.competencies {
-  background: #000;
-}
-
 .competencies__title {
-  margin-bottom: 104px;
+  margin-bottom: 48px;
   width: 1048px;
   font-size: 55px;
   line-height: normal;
@@ -192,23 +188,49 @@ body {
 }
 
 
-.competencie__box {
+.competencie__image {
   margin-bottom: 16px;
   width: 45px;
   height: 44px;
-  background-image: url('../resources/first_icon.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.second_icon {
-  background-image: url('../resources/second_icon.png');
+
+.competencies__list {
+  margin-bottom: 150px;
 }
 
-.third_icon {
-  background-image: url('../resources/third_icon.png');
+.services__title {
+  margin-bottom: 74px;
+  width: 403px;
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  color: #FFF;
 }
 
-.fourth_icon {
-  background-image: url('../resources/fourth_icon.png');
+.service__text {
+  padding: 40px 0 40px 40px;
+  border-radius: 30px;
+  background: #191C19;
+}
+
+.service__title {
+  margin-bottom: 15px;
+  width: 1048px;
+  font-size: 55px;
+  line-height: normal;
+  letter-spacing: -1.65px;
+  color: #1BFF07;
+}
+
+.service__description {
+  width: 749px;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+  color: #FFF;
+}
+
+.services__item {
+  margin-bottom: 74px;
 }
