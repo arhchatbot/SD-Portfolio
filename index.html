@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -19,10 +23,10 @@
                 <a class="logo" href="#hero-page">ORLOV</a>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li><a class="nav__link" href="#">компетенции</a></li>
-                        <li><a class="nav__link" href="#">компетенции</a></li>
-                        <li><a class="nav__link" href="#">услуги</a></li>
-                        <li><a class="nav__link" href="#">контакты</a></li>
+                        <li><a class="nav__link" href="#allprojects">проекты</a></li>
+                        <li><a class="nav__link" href="#allcompetencies">компетенции</a></li>
+                        <li><a class="nav__link" href="#allservices">услуги</a></li>
+                        <li><a class="nav__link" href="#allcontacts">контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,7 +39,7 @@
         </div>
     </header>
     <main>
-        <section class="projects">
+        <section id="allprojects" class="projects">
             <div class="container">
                 <h2 class="projects__title">Самые свежие проекты</h2>
                 <ul class="projects__list">
@@ -64,14 +68,14 @@
                 <a class="projects__link" href="#">Смотреть все проекты</a>
             </div>
         </section>
-        <section class="competencies">
+        <section id="allcompetencies" class="competencies">
             <div class="container">
-                <p class="competencies__title">Мои компетенции</p>
+                <h2 class="competencies__title">Мои компетенции</h2>
                 <ul class="competencies__list">
                     <li class="competencies__item">
                         <img class="competencie__image" src="./resources/first_icon.png" alt="Иконка HTML">
                         <div class="competencie__text">
-                            <p class="competencie__title">HTML и CSS</p>
+                            <h3 class="competencie__title">HTML и CSS</h3>
                             <p class="competencie__description">это основа фронтенд разработки. Умение создавать и
                                 правильно структурировать HTML-документы, а также применять стили к этим документам на
                                 CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
@@ -80,7 +84,7 @@
                     <li class="competencies__item">
                         <img class="competencie__image" src="./resources/second_icon.png" alt="Иконка JavaScript">
                         <div class="competencie__text">
-                            <p class="competencie__title">JavaScript</p>
+                            <h3 class="competencie__title">JavaScript</h3>
                             <p class="competencie__description">это язык программирования, который используется для
                                 создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд
                                 разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом,
@@ -90,7 +94,7 @@
                     <li class="competencies__item">
                         <img class="competencie__image" src="./resources/third_icon.png" alt="Иконка фреймворка">
                         <div class="competencie__text">
-                            <p class="competencie__title">Работа с библиотеками и фреймворками</p>
+                            <h3 class="competencie__title">Работа с библиотеками и фреймворками</h3>
                             <p class="competencie__description">фронтенд разработчики должны быть знакомы с различными
                                 библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение
                                 использовать готовые решения, адаптировать их под нужды проекта и расширять их
@@ -101,7 +105,7 @@
                         <img class="competencie__image" src="./resources/fourth_icon.png"
                             alt="Иконка мобильных устройств">
                         <div class="competencie__text">
-                            <p class="competencie__title">Разработка для мобильных устройств и адаптивная верстка</p>
+                            <h3 class="competencie__title">Разработка для мобильных устройств и адаптивная верстка</h3>
                             <p class="competencie__description">фронтенд разработчики должны быть знакомы с различными
                                 библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение
                                 использовать готовые решения, адаптировать их под нужды проекта и расширять их
@@ -111,7 +115,7 @@
                 </ul>
             </div>
         </section>
-        <section class="services">
+        <section id="allservices" class="services">
             <div class="container">
                 <p class="services__title">Помогаю реализовать широкий спектр задач</p>
                 <ul class="services__list">
@@ -152,7 +156,31 @@
                 </ul>
             </div>
         </section>
+        <section id="allcontacts" class="contacts">
+            <div class="contacts__wrapper">
+                <div class="container">
+                    <p class="contacts__title">для связи:</p>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a class="contact__link" href="#">instagram</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contact__link" href="#">telegram</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contact__link" href="#">mail</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer id="allfooter" class="footer">
+        <div class="container">
+            <p class="footer__title">Портфолио фротнтенд-разработчика Саши Орлова</p>
+            <p class="footer__text">Все права защищены. 2023</p>
+        </div>
+    </footer>
 </body>
 
 </html>
