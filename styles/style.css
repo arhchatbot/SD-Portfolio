@@ -87,8 +87,8 @@ body {
 }
 
 .projects {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .projects__title {
@@ -132,10 +132,8 @@ body {
 
 
 .projects__link {
-  display: block;
+  display: inline-block;
   padding: 56px 85px;
-  width: 582px;
-  height: 153px;
   border-radius: 10px;
   text-align: center;
   font-size: 30px;
@@ -147,10 +145,15 @@ body {
   cursor: pointer;
 }
 
+.project__image {
+  width: 1150px;
+  height: 550px;
+  border-radius: 30px;
+}
+
 .projects__link:hover {
+  display: inline-block;
   padding: 56px 85px;
-  width: 582px;
-  height: 153px;
   text-align: center;
   font-size: 30px;
   line-height: normal;
@@ -159,6 +162,14 @@ body {
   border: 1px solid #1BFF07;
   color: #1BFF07;
   background: #000;
+}
+
+.project__link {
+  height: 550px;
+}
+
+.competencies {
+  margin-bottom: 150px;
 }
 
 .competencies__title {
@@ -170,7 +181,7 @@ body {
   color: #FFF;
 }
 
-.competencie__text {
+.competencies__item {
   margin-bottom: 60px;
 }
 
@@ -191,16 +202,10 @@ body {
   color: #FFF;
 }
 
-
 .competencie__image {
   margin-bottom: 16px;
   width: 45px;
   height: 44px;
-}
-
-
-.competencies__list {
-  margin-bottom: 150px;
 }
 
 .services {
@@ -217,7 +222,7 @@ body {
 }
 
 .service__text {
-  padding: 40px 0 40px 40px;
+  padding: 40px;
   border-radius: 30px;
   background: #191C19;
 }
@@ -239,17 +244,19 @@ body {
   color: #FFF;
 }
 
-.services__item {
-  margin-bottom: 74px;
-}
-
 .service__box {
-  width: 1150px;
+  width: 100%;
   height: 200px;
   border-radius: 30px;
 }
 
-.contacts__wrapper {
+.contacts {
+  margin-bottom: 150px;
+  height: 717px;
+  background-image: url('../resources/programmer.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   border-radius: 30px;
   background: #191C19;
 }
@@ -258,17 +265,8 @@ body {
   margin-bottom: 20px;
 }
 
-.contacts__wrapper {
-  padding-top: 300px;
-  height: 717px;
-  background-image: url('../resources/programmer.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-}
 
 .contacts__title {
-
   margin-bottom: 28px;
   font-size: 35px;
   line-height: 60px;
@@ -285,8 +283,6 @@ body {
 }
 
 .footer {
-  margin-top: 150px;
-  height: 289px;
   padding-top: 76px;
   border-radius: 30px;
   background: #FFF;
