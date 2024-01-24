@@ -131,7 +131,7 @@ body {
 }
 
 
-.projectы__link {
+.projects__link {
   display: inline-block;
   padding: 56px 85px;
   border-radius: 10px;
@@ -255,14 +255,17 @@ body {
 
 .contacts {
   margin-bottom: 150px;
-  padding-top: 300px;
   height: 717px;
-  background-image: url("../resources/programmer.png");
+  border-radius: 30px;
+  background: #191C19;
+}
+
+.contacts__wrapper {
+  height: 100%;
+  background-image: url('../resources/programmer.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  border-radius: 30px;
-  background: #191C19;
 }
 
 
@@ -272,6 +275,7 @@ body {
 
 
 .contacts__title {
+  padding-top: 300px;
   margin-bottom: 28px;
   font-size: 35px;
   line-height: 60px;
