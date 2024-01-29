@@ -108,6 +108,11 @@ body {
   margin-bottom: 80px;
 }
 
+.project__link {
+  height: 550px;
+  border-radius: 30px;
+}
+
 .project__title {
   position: absolute;
   left: 50px;
@@ -148,7 +153,8 @@ body {
 .project__image {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  object-fit: cover;
+  
 }
 
 .projects__link:hover {
@@ -164,9 +170,7 @@ body {
   background: #000;
 }
 
-.project__link {
-  height: 550px;
-}
+
 
 .competencies {
   margin-bottom: 150px;
@@ -246,11 +250,13 @@ body {
 
 .service__box {
   height: 200px;
+  border-radius: 30px;
 }
 
 .service__image {
   width: 100%;
-  border-radius: 30px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contacts {
