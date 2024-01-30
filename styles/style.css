@@ -299,6 +299,7 @@ body {
 
 .footer {
   padding-top: 76px;
+  padding-bottom: 30px;
   border-radius: 30px;
   background: #FFF;
 }
@@ -313,7 +314,6 @@ body {
 }
 
 .footer__text {
-  padding-bottom: 30px;
   font-family: "Manrope", sans-serif;
   font-size: 20px;
   line-height: normal;
