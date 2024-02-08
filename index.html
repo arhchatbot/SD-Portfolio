@@ -1,188 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Александр - frontend разработчик</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Метрика</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header id="hero-page" class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a class="logo" href="#hero-page">ORLOV</a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a class="nav__link" href="#allprojects">проекты</a></li>
-                        <li><a class="nav__link" href="#allcompetencies">компетенции</a></li>
-                        <li><a class="nav__link" href="#allservices">услуги</a></li>
-                        <li><a class="nav__link" href="#allcontacts">контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__box">
-                <p class="header__description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-                    повышают
-                    престиж компании и позволяют выделиться на фоне конкурентов</p>
-                <h1 class="header__title">Привет, я Саша — фронтенд разработчик и дизайнер сайтов</h1>
-            </div>
+  <!--<header class="header">
+    <div class="container">
+      <img class="logo" src="./resourses/metrica-logo.png" alt="Логотип компании Метрика" />
+      <nav class="nav">
+        <ul>
+          <li><a class="nav__link" href="#aboutus">О НАС</a></li>
+          <li><a class="nav__link" href="#allprojects">ПРОЕКТЫ</a></li>
+          <li><a class="nav__link" href="#allservices">УСЛУГИ</a></li>
+          <li><a class="nav__link" href="#allcontacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>-->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Современные и стильные интерьеры для комфортной жизни</h1>
+        <div class="hero__box">
+          <p class="hero__text">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и
+            реализацией дизайн-проектов</p>
         </div>
-    </header>
-    <main>
-        <section id="allprojects" class="projects">
-            <div class="container">
-                <h2 class="projects__title">Самые свежие проекты</h2>
-                <ul class="projects__list">
-                    <li class="project">
-                        <a class="project__link" href="#">
-                            <img class="project__image" src="resources/realhome.png" alt="Высотное здание">
-                            <h3 class="project__title">Realhome</h3>
-                            <p class="project__description">дизайн,верстка, настройка</p>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a class="project__link" href="#">
-                            <img class="project__image" src="resources/fesiyen.png" alt="Высотное здание">
-                            <h3 class="project__title">GLASS</h3>
-                            <p class="project__description">разработка интерфейса</p>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a class="project__link" href="#">
-                            <img class="project__image" src="resources/glass.png" alt="Высотное здание">
-                            <h3 class="project__title">Fesiyen</h3>
-                            <p class="project__description">разработка интерфейса</p>
-                        </a>
-                    </li>
-                </ul>
-                <a class="projects__link" href="#">Смотреть все проекты</a>
+      </div>
+    </section>
+    <section id="aboutus" class="about">
+      <div class="container">
+        <h2 class="about__title">О НАС</h2>
+        <p class="about__text">Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К
+          нам обращаются за уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого
+          интерьера, вплоть до каждой детали — нацелены на результат.</p>
+        <a class="about__btn">Посмотреть услуги</a>
+      </div>
+    </section>
+    <section id="allprojects" class="projects">
+      <div class="container">
+        <h2 class="projects__title">ПРОЕКТЫ</h2>
+        <ul class="projects__list">
+          <li class="project">
+            <div class="project__box">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_interiorhall.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_interiorhall.png">
+                <img class="project__image" src="resourses/interior_hall.jpg" alt="интерьер зала">
+              </picture>
             </div>
-        </section>
-        <section id="allcompetencies" class="competencies">
-            <div class="container">
-                <h2 class="competencies__title">Мои компетенции</h2>
-                <ul class="competencies__list">
-                    <li class="competencies__item">
-                        <img class="competencie__image" src="./resources/first_icon.png" alt="Иконка HTML">
-                        <div class="competencie__text">
-                            <h3 class="competencie__title">HTML и CSS</h3>
-                            <p class="competencie__description">это основа фронтенд разработки. Умение создавать и
-                                правильно структурировать HTML-документы, а также применять стили к этим документам на
-                                CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
-                        </div>
-                    </li>
-                    <li class="competencies__item">
-                        <img class="competencie__image" src="./resources/second_icon.png" alt="Иконка JavaScript">
-                        <div class="competencie__text">
-                            <h3 class="competencie__title">JavaScript</h3>
-                            <p class="competencie__description">это язык программирования, который используется для
-                                создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд
-                                разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом,
-                                асинхронными запросами и манипуляцией данными на стороне клиента.</p>
-                        </div>
-                    </li>
-                    <li class="competencies__item">
-                        <img class="competencie__image" src="./resources/third_icon.png" alt="Иконка фреймворка">
-                        <div class="competencie__text">
-                            <h3 class="competencie__title">Работа с библиотеками и фреймворками</h3>
-                            <p class="competencie__description">фронтенд разработчики должны быть знакомы с различными
-                                библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение
-                                использовать готовые решения, адаптировать их под нужды проекта и расширять их
-                                функциональность, является очень важным навыком.</p>
-                        </div>
-                    </li>
-                    <li class="competencies__item">
-                        <img class="competencie__image" src="./resources/fourth_icon.png"
-                            alt="Иконка мобильных устройств">
-                        <div class="competencie__text">
-                            <h3 class="competencie__title">Разработка для мобильных устройств и адаптивная верстка</h3>
-                            <p class="competencie__description">фронтенд разработчики должны быть знакомы с различными
-                                библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение
-                                использовать готовые решения, адаптировать их под нужды проекта и расширять их
-                                функциональность, является очень важным навыком.</p>
-                        </div>
-                    </li>
-                </ul>
+            <h3 class="project__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
+            <a class="project__link" href="#">Подробнее →</a>
+          </li>
+          <li class="project">
+            <div class="project__box">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_interiorhall2.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_interiorhall2.png">
+                <img class="project__image" src="resourses/interior_hall_2.jpg" alt="интерьер зала с телевизором">
+              </picture>
             </div>
-        </section>
-        <section id="allservices" class="services">
-            <div class="container">
-                <h2 class="services__title">Помогаю реализовать широкий спектр задач</h2>
-                <ul class="services__list">
-                    <li class="services__item">
-                        <div class="service__box">
-                            <img class="service__image" src="./resources/website_ development.png"
-                                alt="Разработка сайта под ключ">
-                        </div>
-                        <div class="service__text">
-                            <h3 class="service__title">Разработка сайта под ключ</h3>
-                            <p class="service__description">Это создание дизайн веб-сайтов, созданный для удобства
-                                пользователя и решения бизнес-задач
-                                Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь
-                                совершит целевое действие</p>
-                        </div>
-                    </li>
-                    <li class="services__item">
-                        <div class="service__box">
-                            <img class="service__image" src="./resources/website_layout.png" alt="Верстка сайтов">
-                        </div>
-                        <div class="service__text">
-                            <h3 class="service__title">Верстка сайтов</h3>
-                            <p class="service__description">Это процесс создания HTML-документов и применения к ним
-                                стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный
-                                интерфейс для вашего сайта</p>
-                        </div>
-                    </li>
-                    <li class="services__item">
-                        <div class="service__box">
-                            <img class="service__image" src="./resources/mobile_interface .png"
-                                alt="Разработка мобильного интерфейса">
-                        </div>
-                        <div class="service__text">
-                            <h3 class="service__title">Разработка мобильного интерфейса</h3>
-                            <p class="service__description">Это процесс создания интерактивных элементов на странице с
-                                помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный
-                                пользовательский интерфейс для вашего сайта или приложения.</p>
-                        </div>
-                    </li>
-                </ul>
+            <h3 class="project__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
+            <a class="project__link" href="#">Подробнее →</a>
+          </li>
+          <li class="project">
+            <div class="project__box">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_diningroom.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_diningroom.png">
+                <img class="project__image" src="resourses/dining_room.jpg" alt="столовая">
+              </picture>
             </div>
-        </section>
-        <section id="allcontacts" class="contacts">
-            <div class="contacts__wrapper">
-                <div class="container">
-                    <p class="contacts__title">для связи:</p>
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <a class="contact__link" href="#">instagram</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contact__link" href="#">telegram</a>
-                        </li>
-                        <li class="contacts__item">
-                            <a class="contact__link" href="#">mail</a>
-                        </li>
-                    </ul>
-                </div>
+            <h3 class="project__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
+            <a class="project__link" href="#">Подробнее →</a>
+          </li>
+        </ul>
+        <a class="projects__link" href="#">Смотреть все проекты</a>
+      </div>
+    </section>
+    <!-- <section id="allservices" class="services">
+      <div class="container">
+        <h3 class="services__title">Услуги</h3>
+        <ul class="services__list">
+          <li class="service__item">
+            <div class="services__image">
+              <img class="service__image" src="services/planning_solution.png" alt="Планировочное решение">
             </div>
-        </section>
-    </main>
-    <footer id="allfooter" class="footer">
-        <div class="container">
-            <p class="footer__title">Портфолио фротнтенд-разработчика Саши Орлова</p>
-            <p class="footer__text">Все права защищены. 2023</p>
+            <h3 class="service__title">Планировочное решение — от 2500₽/м²</h3>
+          </li>
+          <li class="service__item">
+            <div class="services__image">
+              <img class="service__image" src="services/design_project.png" alt="Дизайн-проект">
+            </div>
+            <h3 class="service__title">Дизайн-проект — от 3000₽/м²</h3>
+          </li>
+          <li class="service__item">
+            <div class="services__image">
+              <img class="service__image" src="services/author's_supervision.png" alt="Авторский надзор">
+            </div>
+            <h3 class="service__title">Авторский надзор — от 30 000₽ в месяц</h3>
+          </li>
+          <li class="service__item">
+            <div class="services__image">
+              <img class="service__image" src="services/equipment.png" alt="Комплектация">
+            </div>
+            <h3 class="service__title">Комплектация — 5% от стоимости спецификации</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <p class="gallery__text">Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
+      </div>
+    </section>
+    <section id="allcontacts" class="contacts">
+      <div class="container">
+        <div class="contacts__box">
+          <p class="contacts__text">КОНТАКТЫ</p>
+          <a class="contacts__number" href="tel:+7 935 895-45-35">+7 935 895-45-35</a>
+          <a class="contacts__mail" href="mailto:hello@mail.com">hello@mail.com</a>
         </div>
-    </footer>
-</body>
+      </div>
+    </section>  -->
+  </main>
+  <!-- <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <ul>
+          <li><a class="footer__nav__link" href="#aboutus">О НАС</a></li>
+          <li><a class="footer__nav__link" href="#allprojects">ПРОЕКТЫ</a></li>
+          <li><a class="footer__nav__link" href="#allservices">УСЛУГИ</a></li>
+          <li><a class="footer__nav__link" href="#allcontacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
+    </div>
+  </footer> -->
 
-</html>
+  <body>

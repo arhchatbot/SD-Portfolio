@@ -3,10 +3,9 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  background: #000;
+  font-family: 'Manrope', sans-serif;
+  width: 100%;
+  background: white;
 }
 
 .container {
@@ -15,309 +14,500 @@ body {
   padding: 0 15px;
 }
 
-.header {
-  margin: 0 auto;
-  max-width: 1400px;
-  height: 765px;
-  padding-top: 30px;
-  background-image: url('../resources/hero-photo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.header__inner {
-  margin-bottom: 252px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .logo {
-  padding: 9px 12px 7px 9px;
-  font-size: 42.414px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -4.666px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 100px;
-  background: #000;
-  color: #1BFF07;
-}
-
-.nav li {
+  margin-top: 30px;
+  margin-right: 576px;
   display: inline-block;
 }
 
 .nav {
-  width: 503px;
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.nav__list {
-  display: flex;
-  justify-content: space-between;
+.nav li {
+  margin-right: 60px;
+  display: inline-block;
 }
+
 
 .nav__link {
+  text-align: center;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.54px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #FFF;
+  color: #121212;
 }
 
-.header__box {
-  width: 919px;
+.nav li:first-child {
+  opacity: 0.5;
+  text-decoration: underline;
 }
 
-.header__description {
-  margin-bottom: 29px;
-  width: 430px;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: -0.6px;
-  color: #FFF;
+.nav li:last-child {
+  margin-right: 0;
 }
 
-.header__title {
-  font-size: 80px;
-  line-height: 70px;
-  letter-spacing: -2.4px;
-  color: #1BFF07;
-}
-
-.projects {
-  margin-top: 150px;
+.hero {
+  margin-top: 74px;
   margin-bottom: 150px;
 }
 
-.projects__title {
-  margin-bottom: 40px;
-  width: 1048px;
-  font-size: 55px;
+.hero__title {
+  margin-bottom: 30px;
+  max-width: 956px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+}
+
+.hero__box {
+  position: relative;
+  height: 500px;
+  background-image: url('../resourses/interior.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__text {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  max-width: 430px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
-  letter-spacing: -1.65px;
-  color: #FFF;
+  letter-spacing: -0.6px;
+  color: #FFFFFF;
+}
+
+.about {
+  margin-bottom: 150px;
+}
+
+.about__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.about__text {
+  margin-top: 30px;
+  max-width: 1048px;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.35px;
+  color: #121212;
+}
+
+.about__btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  background: #AD1818;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.projects {
+  margin-bottom: 150px;
 }
 
 .project {
-  position: relative;
+  margin-bottom: 90px;
 }
 
 .projects__list {
-  margin-bottom: 80px;
+  margin-top: 30px;
 }
 
-.project__link {
-  height: 550px;
-  border-radius: 30px;
+.projects__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.project__box {
+  margin-bottom: 15px;
+  height: 450px;
+}
+
+.project__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .project__title {
-  position: absolute;
-  left: 50px;
-  bottom: 94px;
-  width: 401px;
-  font-size: 35px;
-  line-height: normal;
-  letter-spacing: -1.05px;
-  color: #FFF;
-}
-
-.project__description {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  width: 506px;
+  margin-bottom: 15px;
   font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.9px;
-  color: #FFF;
+  color: #121212;
+}
+
+.project__link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-decoration: none;
+  color: #AD1818;
 }
 
 
 .projects__link {
-  display: inline-block;
-  padding: 56px 85px;
-  border-radius: 10px;
+  display: block;
+  padding: 56px 0;
+  border-radius: 5px;
+  text-decoration: none;
   text-align: center;
   font-size: 30px;
-  line-height: normal;
-  letter-spacing: -0.9px;
-  text-decoration: none;
-  color: #000;
-  background: #1BFF07;
-  cursor: pointer;
-}
-
-.project__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
+  line-height: 41px;
+  border: 1px solid #AD1818;
+  color: #AD1818;
 }
 
 .projects__link:hover {
-  display: inline-block;
-  padding: 56px 85px;
-  text-align: center;
-  font-size: 30px;
-  line-height: normal;
-  letter-spacing: -0.421px;
-  border-radius: 10px;
-  border: 1px solid #1BFF07;
-  color: #1BFF07;
-  background: #000;
-}
-
-
-
-.competencies {
-  margin-bottom: 150px;
-}
-
-.competencies__title {
-  margin-bottom: 48px;
-  width: 1048px;
-  font-size: 55px;
-  line-height: normal;
-  letter-spacing: -1.65px;
   color: #FFF;
-}
-
-.competencies__item {
-  margin-bottom: 60px;
-}
-
-.competencie__title {
-  margin-bottom: 15px;
-  width: 1048px;
-  font-size: 35px;
-  line-height: normal;
-  letter-spacing: -1.05px;
-  color: #1BFF07;
-}
-
-.competencie__description {
-  width: 778px;
-  font-size: 22px;
-  line-height: normal;
-  letter-spacing: -0.66px;
-  color: #FFF;
-}
-
-.competencie__image {
-  margin-bottom: 16px;
-  width: 45px;
-  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #AD1818;
+  background: #AD1818;
 }
 
 .services {
-  margin-bottom: 150px;
+  padding-top: 151px;
+  padding-bottom: 150px;
+  background: #121212;
 }
 
 .services__title {
-  margin-bottom: 74px;
-  width: 403px;
-  font-size: 35px;
+  margin-bottom: 34px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
-  letter-spacing: -1.05px;
-  color: #FFF;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
-.service__text {
-  padding: 40px;
-  border-radius: 30px;
-  background: #191C19;
-}
-
-.service__title {
+.services__image {
   margin-bottom: 15px;
-  width: 1048px;
-  font-size: 55px;
-  line-height: normal;
-  letter-spacing: -1.65px;
-  color: #1BFF07;
-}
-
-.service__description {
-  width: 749px;
-  font-size: 22px;
-  line-height: normal;
-  letter-spacing: -0.66px;
-  color: #FFF;
-}
-
-.service__box {
-  height: 200px;
-  border-radius: 30px;
+  height: 270px;
 }
 
 .service__image {
+  height: 100%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-size: cover;
 }
 
-.contacts {
-  margin-bottom: 150px;
+.service__item {
+  margin-bottom: 60px;
+}
+
+.service__title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  color: #FFFFFF;
+}
+
+
+.gallery {
+  margin: 0 auto;
+  width: 1400px;
   height: 717px;
-  border-radius: 30px;
-  background: #191C19;
-}
-
-.contacts__wrapper {
-  height: 100%;
-  background-image: url('../resources/programmer.png');
+  background-image: url('../resourses/bedfoto.png');
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  background-size: cover;
 }
 
-
-.contacts__item {
-  margin-bottom: 20px;
-}
-
-
-.contacts__title {
-  padding-top: 300px;
-  margin-bottom: 28px;
-  font-size: 35px;
-  line-height: 60px;
-  letter-spacing: -1.05px;
+.gallery__text {
+  padding-top: 575px;
+  width: 443px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
   color: #FFF;
 }
 
-.contact__link {
+.contacts__box {
+  box-sizing: border-box;
+
+}
+
+.contacts__text {
+  position: relative;
+  display: block;
+  margin-top: 186px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.contacts__text::before {
+  position: absolute;
+  left: -4px;
+  bottom: 37px;
+  content: url('../resourses/logo-iphone.png');
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contacts__number {
+  margin-bottom: 30px;
+  display: block;
   font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.8px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.contacts__mail {
+  margin-bottom: 160px;
+  display: block;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  opacity: 0.5;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  color: #121212;
+}
+
+.footer {
+  padding-bottom: 30px;
+  background: #121212;
+}
+
+.footer__nav {
+  margin-top: 60px;
+  margin-left: 345px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__nav li {
+  margin-right: 54px;
+  display: inline-block;
+}
+
+.footer__nav__link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
   text-decoration: none;
   color: #FFF;
 }
 
-.footer {
-  padding-top: 76px;
-  padding-bottom: 30px;
-  border-radius: 30px;
-  background: #FFF;
-}
-
-.footer__title {
-  margin-bottom: 66px;
-  font-family: "Manrope", sans-serif;
-  font-size: 22px;
-  line-height: normal;
-  letter-spacing: -0.66px;
-  color: #000;
-}
-
 .footer__text {
-  font-family: "Manrope", sans-serif;
+  display: block;
+  margin-top: 87px;
+  margin-left: 384px;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.6px;
   opacity: 0.5;
-  color: #000;
+  color: #FFF;
+}
+
+@media (max-width: 961px) {
+
+  .hero__title {
+    max-width: 802px;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero__box {
+    height: 400px;
+    background-image: url('../resourses/tablet_interior.png');
+  }
+
+  .hero__text {
+    bottom: 30px;
+  }
+
+  .hero {
+    margin-bottom: 120px;
+  }
+
+  .about__text {
+    max-width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: -3%;
+  }
+
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .project:last-child {
+    margin-bottom: 100px;
+  }
+
+  .project__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -3%;
+  }
+
+  .project__box {
+    margin-bottom: 20px;
+  }
+
+  .projects {
+    margin-bottom: 103px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 0 14px 0 13px;
+  }
+
+  .hero__title {
+    margin-bottom: 25px;
+    max-width: 348px;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: -0.9px;
+  }
+
+  .hero__box {
+    height: 304px;
+    background-image: url('../resourses/mobile_interior.png');
+  }
+
+  .hero__text {
+    max-width: 312px;
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .hero {
+    margin-bottom: 80px;
+  }
+
+  .about__title {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -3%;
+  }
+
+  .about__text {
+    margin-top: 20px;
+    max-width: 346px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about__btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -3%;
+    border-radius: 4px;
+  }
+
+  .project {
+    margin-bottom: 50px;
+  }
+
+  .project:last-child {
+    margin-bottom: 60px;
+  }
+
+  .projects__title {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -3%;
+  }
+
+  .project__box {
+    margin-bottom: 20px;
+    height: 250px;
+  }
+
+  .project__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project__title {
+    margin-bottom: 11px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -3%;
+  }
+
+  .project__link {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -3%;
+  }
+
+  .projects__link {
+    padding: 37px 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .projects {
+    margin-bottom: 144px;
+  }
 }
